@@ -2,13 +2,6 @@ let btnTranslate = document.querySelector("#btn-translate");
 let txtInput = document.querySelector("#txt-input");
 let outputDiv = document.querySelector("#output");
 
-
-// console.log(txtInput);
-// console.log(btnTranslate);
-console.log(outputDiv);
-// outputDiv.innerText = "Manas Ranjan";
-
-
 function clickHandler(){
     console.log("clicked!");
     console.log("input",txtInput.value);
@@ -20,6 +13,4 @@ function clickHandler(){
 
 // .addEventListener("click", callback)
 btnTranslate.addEventListener("click", clickHandler); 
-
-
 
