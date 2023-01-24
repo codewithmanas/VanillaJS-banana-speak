@@ -1,4 +1,4 @@
-
+// testing
 let btnTranslate = document.querySelector("#btn-translate");
 let txtInput = document.querySelector("#txt-input");
 let txtArea = document.querySelector("textarea");
