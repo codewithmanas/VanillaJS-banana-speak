@@ -1,28 +1,25 @@
-// testing
 let btnTranslate = document.querySelector("#btn-translate");
 let txtInput = document.querySelector("#txt-input");
-let txtArea = document.querySelector("textarea");
-let docBody = document.querySelector("body");
+let outputDiv = document.querySelector("#output");
 
 
-console.log(txtInput);
-console.log(txtArea);
-
-
+// console.log(txtInput);
 // console.log(btnTranslate);
+console.log(outputDiv);
+// outputDiv.innerText = "Manas Ranjan";
 
 
 function clickHandler(){
     console.log("clicked!");
     console.log("input",txtInput.value);
-    console.log("input",btnTranslate.value);
-    console.log("input",txtArea.style.backgroundColor = "yellow");
-    console.log("input",docBody.style.backgroundColor = "green");
-    console.log("input",txtArea.style.marginLeft = "0");
+    // console.log("input",btnTranslate.value); // empty string
+    outputDiv.innerText = "Bello, amee nama to? " + txtInput.value;
+    
 
 }
 
-btnTranslate.addEventListener("click", clickHandler); // .addEventListener("click", callback)
+// .addEventListener("click", callback)
+btnTranslate.addEventListener("click", clickHandler); 
 
 
 
