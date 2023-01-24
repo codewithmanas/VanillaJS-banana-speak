@@ -1,7 +1,16 @@
-console.log("This is working.");
-var userName = prompt("Enter your username: ");
+// step 1
+let btnTranslate = document.querySelector("#btn-translate");
 
-var welcomeMsg = "This script is working." + userName;
-alert(welcomeMsg);
-alert(welcomeMsg);
+// step 2
+// console.log(btnTranslate);
+
+// step 3
+function clickHandler(){
+    console.log("clicked!"); 
+}
+
+// step 3
+btnTranslate.addEventListener("click", clickHandler); // .addEventListener("click", callback)
+
+
 
