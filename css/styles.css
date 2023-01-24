@@ -1,0 +1,28 @@
+textarea {
+    width: 80%;
+    height: 10vh;
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0.3rem 1rem;
+} 
+
+#output {
+    border: 1px solid black;
+    height: 10vh;
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#output-title {
+    font-size: larger;
+    margin: 0.3rem 1rem;
+}
+
+#btn-translate {
+    margin: 0.3rem 1rem;
+}
