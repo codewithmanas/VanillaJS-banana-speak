@@ -7,6 +7,12 @@ let serverURL = "https://apibyneog.imanas96.repl.co/translate/yoda.json";
 function getTranslationURL(text) {
     return serverURL + "?" + "text=" + text;
 }
+
+function errorHandler(error){
+    console.log("error occured", error);
+    // alert("Server Down!");
+}
+
 function clickHandler(){
     // outputDiv.innerText = "Bello, amee nama to? " + txtInput.value;
     let inputText = txtInput.value;
@@ -15,6 +21,7 @@ function clickHandler(){
     fetch(getTranslationURL(inputText))
     .then(response => response.json())
     .then(json => console.log(json.contents.translated))
+    .catch(errorHandler)
 
 }
 
